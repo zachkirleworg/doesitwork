@@ -1,0 +1,32 @@
+{
+  "name" : "index",
+  "title" : "Web Page Under Construction",
+  "uri" : "doesitwork.com",
+  "userInterface" : {
+    "themeName" : "mediaBlog",
+    "resourcesHost" : "https://bc.marfeelcache.com",
+    "lang" : "en",
+    "features" : {
+      "useUiJson" : true,
+      "twisterJavaEnabled" : true,
+      "forceXL" : true,
+      "useInventoryAds" : "remote"
+    }
+  },
+  "configuration" : {
+    "whiteCollarScript" : "index/src/whiteCollar/main.js",
+    "cronRefresh" : "0 1 0 1/1 * ? *"
+  },
+  "sectionDefinitions" : [ {
+    "name" : "home",
+    "styles" : "photo",
+    "title" : "Home",
+    "feedDefinitions" : [ {
+      "uri" : "http://www.doesitwork.com",
+      "alibabaDefinition" : { }
+    } ],
+    "configuration" : {
+      "cronRefresh" : "0 0/3 * 1/1 * ? *"
+    }
+  } ]
+}
